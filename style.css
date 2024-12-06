@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Chango", sans-serif;
+	background-color: #4d682a;
+}
+
+main {
+	height: fit-content;
+	padding: 7px;
+	display: grid;
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-columns: 1fr 1fr;
+	gap: 7px;
+}
+
+button {
+	font-size: 50px;
+	margin: auto;
+	border-radius: 8px;
+	border: none;
+	width: 97%;
+	padding: 50px;
+	transition: 0.5s;
+}
+
+.mdi {
+	display: none;
+}
+
+.yellow {
+	background-color: #ffc776;
+	color: #402909;
+}
+
+.blue {
+	background-color: #baece7;
+	color: #214441;
+}
+
+.pink {
+	background-color: #e5d3e4;
+	color: #4d254a;
+}
+
+.red {
+	background-color: #f26046;
+	color: #fff;
+}
+
+/* button:hover, */
+button:focus {
+    transform: scale(1.2) rotateY(180deg);
+
+}
+
+@media screen and (min-width: 685px) {
+	body {
+		background-color: #fff;
+		padding: 10%;
+	}
+
+	main {
+		background-color: #4d682a;
+		padding: 2%;
+		border-radius: 8px;
+		grid-template-rows: repeat(8, 1fr);
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2px;
+	}
+
+	button {
+		width: 99%;
+		height: 90%;
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.mdi {
+		display: block;
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	body {
+		padding: 10%;
+	}
+
+	main {
+		padding: 2%;
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+		gap: 5px;
+	}
+
+	button {
+		font-size: 30px;
+		justify-content: space-between;
+	}
+
+	.mdi {
+		font-size: 35px;
+	}
+}
